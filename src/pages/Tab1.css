@@ -1,0 +1,55 @@
+img{
+    border-radius: 50%;
+  
+    /*margin-inline:-5px;*/ 
+}
+
+ion-item{
+    --padding-start:7px;
+    --inner-padding-end:10px;
+}
+
+ion-thumbnail{
+ height: 100%;
+ margin-inline-end:10px;
+   
+    
+    
+}
+
+#titulo{
+    font-weight:bold;
+    font-size: 0.8rem;
+   
+    
+}
+#descricao{
+    font-size: 0.7rem;
+    
+
+} 
+
+#genero{
+    color: #999999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: x-small;
+    margin-inline-start:0px;
+    
+    
+}
+#ano{
+
+}
+
+ion-chip{
+    padding-right: unset;
+    padding-left: unset;
+    padding-inline: 3px;
+    margin-right: 0px;
+    
+    
+}
+
+

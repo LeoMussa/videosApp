@@ -1,6 +1,8 @@
 import React from "react";
+
 import {
   IonAvatar,
+  IonButton,
   IonCheckbox,
   IonChip,
   IonContent,
@@ -20,10 +22,22 @@ import {
   IonTitle,
   IonToggle,
   IonToolbar,
+  useIonAlert,
 } from "@ionic/react";
 
 import "./Tab1.css";
-import { archive, atOutline, ellipsisHorizontal, ellipsisVertical, heart, star, trash } from "ionicons/icons";
+
+import {
+  archive,
+  atOutline,
+  ellipsisHorizontal,
+  ellipsisVertical,
+  heart,
+  star,
+  trash,
+} from "ionicons/icons";
+import { presentAlert } from "./alerta";
+
 
 const Tab1: React.FC = () => {
   return (
@@ -57,11 +71,8 @@ const Tab1: React.FC = () => {
             </IonItem>
 
             <IonItemOptions side="end">
-              <IonItemOption onClick={() => console.log("unread clicked")}>
-              <IonIcon slot="start" icon={star} /> Favorito
-            
-               
-               
+              <IonItemOption onClick={presentAlert}>
+                <IonIcon slot="start" icon={star} /> Favorito
               </IonItemOption>
             </IonItemOptions>
           </IonItemSliding>
@@ -86,18 +97,18 @@ const Tab1: React.FC = () => {
             </IonItem>
 
             <IonItemOptions side="end">
-              <IonItemOption onClick={() => console.log("unread clicked")}>
-              <IonIcon slot="start" icon={star} /> Favorito
-            
-               
-               
+              <IonItemOption onClick={presentAlert}>
+                <IonIcon slot="start" icon={star} /> Favorito
               </IonItemOption>
             </IonItemOptions>
           </IonItemSliding>
         </IonList>
+       
+
+        
       </IonContent>
     </IonPage>
   );
 };
-
 export default Tab1;
+
